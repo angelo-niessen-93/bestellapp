@@ -1,14 +1,17 @@
-.add-button, .quantity-button {
+.add-button,
+.quantity-button {
   padding: 5px 10px;
   margin-top: 5px;
   cursor: pointer;
   background-color: #ea782f;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 8px;
+  width: 100px;
 }
 
-.add-button:hover, .quantity-button:hover {
+.add-button:hover,
+.quantity-button:hover {
   background-color: #fa6509;
 }
 
@@ -18,7 +21,7 @@
   padding: 15px;
   border-radius: 5px;
   height: fit-content;
-  background: linear-gradient(180deg, #e66e30, #d84833);
+  background-color: rgb(76, 76, 76);
   position: sticky;
   top: 20px;
 }
@@ -43,24 +46,25 @@
 }
 
 span {
-    color: white;
+  color: white;
 }
 
 h2 {
-    color: white;
+  color: white;
 }
 
-p { color: white;
+p {
+  color: white;
 }
 
 button {
-    color: white;
-    background-color: #e66e30;
-    border-radius: 8px;
-    border-color: #fa6509;
+  color: white;
+  background-color: #e66e30;
+  border-radius: 8px;
+  border-color: #fa6509;
 }
 
 button:hover {
   background-color: #fa6509;
-  
+
 }

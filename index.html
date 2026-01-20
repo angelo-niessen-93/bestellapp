@@ -1,52 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BestellApp</title>
-    <link rel="stylesheet" href="./style/assets.css">
-    <link rel="stylesheet" href="./style/basket.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body onload="renderDishes();" >
-<div id="splash">
+    <link rel="stylesheet" href="./style/assets.css" />
+    <link rel="stylesheet" href="./style/basket.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="renderDishes()">
+    <div id="splash">
       <video autoplay muted playsinline class="splash-video">
-          <source src="./assets/img/splashscreen.mp4" type="video/mp4">
+        <source src="./assets/img/splashscreen.mp4" type="video/mp4" />
       </video>
-  </div>
- <div id="main-content" style="display:none;">
-<header>
-    
-     <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
-        ☰
-    </button>
+    </div>
+    <div id="main-content" style="display: none">
+      <header>
+        <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
+          ☰
+        </button>
 
-  <nav class="nav">
-    <a href="#">Konto</a>
-    <a href="#">Meine Bestellungen</a>
-    <a href="#">Kontakt</a>
-    <a href=".#">Einstellungen</a>
-  </nav>
-  <img class="App-logo" src="./assets/img/Design ohne Titel (1).png" alt="BestellAppLogo">
-</header>
-<main>
-
-    <div id="dishesList" class="dishes-list" ></div>
-    <aside>
-        <div id="basket" class="shopping-basket" >
-        <h2>Warenkorb</h2>
-      <div id="basketItems"></div>
-      <p id="totalPrice">Gesamt: 0€</p>
-      <button id="checkoutButton">Bezahlen</button>
+        <nav class="nav">
+          <a href="#">Konto</a>
+          <a href="#">Meine Bestellungen</a>
+          <a href="#">Kontakt</a>
+          <a href=".#">Einstellungen</a>
+        </nav>
+        <img
+          class="App-logo"
+          src="./assets/img/Design ohne Titel (1).png"
+          alt="BestellAppLogo"
+        />
+      </header>
+      <div class="hero">
+        <div class="main-img-container">
+          <img
+            class="main-img"
+            src="./assets/img/pizza-386717_1280.jpg"
+            alt="Pizza geschnitten"
+          />
+        </div>
+        <div class="logo-wrapper">
+          <img
+            src="./assets/icon/Yellow Orange Playful Illustrative Pizza Mania Brand Logo.png"
+            alt="Logo"
+            class="logo"
+          />
+        </div>
       </div>
-    </aside>
-</main>
-<footer>
-
-</footer>
-</div>
-<script src="./script/burger.js"></script>
-<script src="./script/template.js"></script>
-<script src="./script.js"></script> 
-</body>
+      <main>
+        <div id="dishesList" class="dishes-list"></div>
+        <aside>
+          <div id="basket" class="shopping-basket">
+            <h2>Warenkorb</h2>
+            <div id="basketItems"></div>
+            <p id="totalPrice">Gesamt: 0€</p>
+            <button id="checkoutButton">Bezahlen</button>
+          </div>
+        </aside>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="./script/burger.js"></script>
+    <script src="./script/template.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

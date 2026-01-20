@@ -1,31 +1,72 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    background: linear-gradient(180deg, #e66e30, #d84833);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  background: linear-gradient(180deg, #e66e30, #d84833);
 }
 
-.dishes-list {
-    
+.main-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
+
+.main-img-container {}
+
+.dishes-list {}
 
 .App-logo {
-    width:50px;
+  width: 50px;
 }
 
 main {
   display: flex;
-  gap: 20px; /* Abstand zwischen Gerichte-Bereich und Sidebar */
+  gap: 20px;
+  /* Abstand zwischen Gerichte-Bereich und Sidebar */
   padding: 20px;
+  margin-top: 60px;
+}
+
+.hero {
+  position: relative;
+  /* Referenz für das Logo */
+}
+
+.hero-image {
+  width: 100%;
+  height: 220px;
+  /* Höhe des Headerbilds */
+  object-fit: cover;
+}
+
+/* Logo-Container */
+.logo-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  /* Hälfte des Logos ragt nach unten */
+  transform: translateX(-50%);
+
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo selbst */
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 /* Gerichte-Liste */
 .dishes-list {
-  flex: 3; /* nimmt mehr Platz ein */
+  flex: 3;
+  /* nimmt mehr Platz ein */
 }
 
 /* Einzelnes Gericht */
@@ -35,7 +76,8 @@ main {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
-  gap: 15px; /* Abstand zwischen Bild und Info */
+  gap: 15px;
+  /* Abstand zwischen Bild und Info */
   border-radius: 5px;
 }
 
@@ -64,35 +106,35 @@ main {
 }
 
 .dishes:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 
 .dishes p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #333;
-    text-align: left;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
 }
 
 .vegan-label {
-    color: green;
-    font-weight: bold;
-    margin: 5px 0;
+  color: green;
+  font-weight: bold;
+  margin: 5px 0;
 }
 
 .spicy-label {
-    margin: 5px 0;
-    font-weight: bold;
-    color: #e74c3c;
-    font-size: 16px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 16px;
 }
 
 .category-title {
-    width: 100%;
-    text-align: left;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #ea782f;
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #ea782f;
 }

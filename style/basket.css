@@ -15,11 +15,26 @@
   background-color: #fa6509;
 }
 
+#basketItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 290px;    
+  overflow-y: auto;
+}
+
+.basket-item {
+  background-color: burlywood;
+  border-radius: 8px;
+  padding: 10px;
+
+}
+
 .shopping-basket {
   flex: 1;
   border: 1px solid #ccc;
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   height: fit-content;
   background-color: rgb(76, 76, 76);
   position: sticky;

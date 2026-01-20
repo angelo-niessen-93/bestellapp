@@ -71,8 +71,34 @@
       </main>
       <footer></footer>
     </div>
+    <div id="checkoutModal" class="modal">
+      <div class="modal-content">
+        <h2>Bestellung abschließen</h2>
+
+        <label>Name</label>
+        <input type="text" id="customerName" placeholder="Dein Name" />
+
+        <label>Adresse</label>
+        <input type="text" id="customerAddress" placeholder="Deine Adresse" />
+
+        <label>Bezahlmethode</label>
+        <select id="paymentMethod">
+          <option value="">Bitte wählen</option>
+          <option value="bar">Bar</option>
+          <option value="karte">Karte</option>
+          <option value="paypal">PayPal</option>
+        </select>
+
+        <div class="modal-buttons">
+          <button onclick="closeCheckoutModal()">Abbrechen</button>
+          <button onclick="confirmOrder()">Bestellen</button>
+        </div>
+      </div>
+    </div>
     <script src="./script/burger.js"></script>
     <script src="./script/template.js"></script>
     <script src="./script.js"></script>
+    <script src="./script/basket.js"></script>
+    <script src="./script/checkout.js"></script>
   </body>
 </html>

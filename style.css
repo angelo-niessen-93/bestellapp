@@ -17,17 +17,51 @@ header {
     width:50px;
 }
 
-.dishes {
-    background-color: #fff;     
-    border: 1px solid #ccc;     
-    border-radius: 10px;         
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
-    width: 200px;                
-    text-align: center;          
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: auto;
+main {
+  display: flex;
+  gap: 20px; /* Abstand zwischen Gerichte-Bereich und Sidebar */
+  padding: 20px;
 }
 
+/* Gerichte-Liste */
+.dishes-list {
+  flex: 3; /* nimmt mehr Platz ein */
+}
+
+/* Einzelnes Gericht */
+.dishes {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  gap: 15px; /* Abstand zwischen Bild und Info */
+  border-radius: 5px;
+}
+
+/* Bild links, klein */
+.dishes img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Textinfos rechts */
+.dishes .info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Vegan-Label */
+.vegan-label {
+  color: green;
+  font-weight: bold;
+}
+
+/* Spicy-Label */
+.spicy-label {
+  font-size: 0.9em;
+}
 
 .dishes:hover {
     transform: translateY(-5px); 

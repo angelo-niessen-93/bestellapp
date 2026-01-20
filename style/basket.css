@@ -1,0 +1,66 @@
+.add-button, .quantity-button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: #ea782f;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.add-button:hover, .quantity-button:hover {
+  background-color: #fa6509;
+}
+
+.shopping-basket {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  height: fit-content;
+  background: linear-gradient(180deg, #e66e30, #d84833);
+  position: sticky;
+  top: 20px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-button {
+  padding: 3px 8px;
+  cursor: pointer;
+  background-color: #ea782f;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.quantity-button:hover {
+  background-color: #fa6509;
+}
+
+span {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p { color: white;
+}
+
+button {
+    color: white;
+    background-color: #e66e30;
+    border-radius: 8px;
+    border-color: #fa6509;
+}
+
+button:hover {
+  background-color: #fa6509;
+  
+}

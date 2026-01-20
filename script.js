@@ -2,6 +2,7 @@ let dishes = [
   {
     name: "Spaghetti Bolognese",
     category: "Warme Speisen",
+    image: "assets/img/spaghetti-1604836_640.jpg",
     price: 12.99,
     vegetarian: false,
     spicyLevel: 1
@@ -9,6 +10,7 @@ let dishes = [
   {
     name: "Penne Arrabbiata",
     category: "Warme Speisen",
+    image: "assets/img/spaghetti-1604836_640.jpg",
     price: 11.55,
     vegetarian: true,
     spicyLevel: 3
@@ -16,6 +18,7 @@ let dishes = [
   {
     name: "Hähnchen-Curry",
     category: "Warme Speisen",
+    image: "assets/img/curry-7249247_640.jpg",
     price: 13.55,
     vegetarian: false,
     spicyLevel: 3
@@ -23,6 +26,7 @@ let dishes = [
   {
     name: "Rindersteak mit Ofenkartoffeln",
     category: "Warme Speisen",
+    image: "assets/img/steak-4432946_640.jpg",
     price: 19.99,
     vegetarian: false,
     spicyLevel: 1
@@ -30,6 +34,7 @@ let dishes = [
   {
     name: "Gemüsepfanne",
     category: "Warme Speisen",
+    image: "assets/img/vegetable-pan-8027678_640.jpg",
     price: 11.25,
     vegetarian: true,
     spicyLevel: 1
@@ -193,6 +198,7 @@ function renderDishesHTML(dishes, index) {
     <div class="dishes">
         <p>Name: ${dishes.name}</p>
         <p>Kathegorie: ${dishes.category}</p>
+        <img src="${dishes.image}" alt="${dishes.name}">
         <p>Preis: ${dishes.price}€</p>
          ${dishes.vegetarian ? `<p class="vegan-label">Vegan</p>` : ""}
         <p>Scharf: ${dishes.spicyLevel}</p>
@@ -212,6 +218,7 @@ function renderDishesHTML(dish, index) {
     <div class="dishes">
         <p>Name: ${dish.name}</p>
         <p>Preis: ${dish.price}€</p>
+        <img src="${dishes.image}" alt="${dishes.name}">
         ${dish.vegetarian ? `<p class="vegan-label">Vegan</p>` : ""}
         <p class="spicy-label">Scharf: ${spicyIcons}</p>
     </div>`;

@@ -4,7 +4,7 @@
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -16,7 +16,7 @@
 .nav a {
   display: block;
   padding: 0.75rem 0;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -35,24 +35,16 @@
     z-index: 9999;
 }
 
-/* Video immer Cover, ohne weiße Ränder */
 .splash-video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Video füllt immer den Bildschirm aus */
+    height: 100vh;
+    object-fit: fill; 
 }
-
-/* Optional: Keine Scrollbars während Splash */
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;  /* verhindert Scrollen während Splash */
-}
-
-/* Für Mobilgeräte (ab 320px Breite) */
 @media screen and (max-width: 480px) {
     .splash-video {
+        display: none;
+        object-fit: contain; 
         width: 100%;
         height: 100%;
-    }
+        background: linear-gradient(347deg,rgba(207, 77, 61, 1) 0%, rgba(227, 98, 50, 1) 50%, rgba(226, 130, 65, 1) 100%);    }
 }

@@ -1,0 +1,31 @@
+.header {
+  padding: 1rem;
+  background: #0051c2;
+  color: rgb(255, 155, 32);
+}
+
+
+.burger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+  margin-top: 1rem;
+}
+
+.nav a {
+  display: block;
+  padding: 0.75rem 0;
+  color: rgb(255, 126, 34);
+  text-decoration: none;
+}
+
+
+.nav.active {
+  display: block;
+}

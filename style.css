@@ -1,21 +1,17 @@
 .dishes-list {
-    display: flex;
-    flex-wrap: wrap;          
-    gap: 20px;                
-    justify-content: center;  
-    padding: 20px;
+    
 }
 
-/* Einzelne Gericht-Box */
+
 .dishes {
     background-color: #fff;     
     border: 1px solid #ccc;     
     border-radius: 10px;         
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
-    padding: 15px;
     width: 200px;                
     text-align: center;          
     transition: transform 0.2s, box-shadow 0.2s;
+    width: auto;
 }
 
 

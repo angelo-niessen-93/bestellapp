@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body onload="renderDishes();" >
+<div id="splash">
+      <video autoplay muted playsinline class="splash-video">
+          <source src="./assets/img/splashscreen.mp4" type="video/mp4">
+      </video>
+  </div>
+ <div id="main-content" style="display:none;">
 <header>
+    
      <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
         ☰
     </button>
@@ -20,6 +27,7 @@
     <a href="#">Kontakt</a>
     <a href=".#">Einstellungen</a>
   </nav>
+  <h1>BestellApp</h1>
 </header>
 <main>
 
@@ -31,6 +39,7 @@
 <footer>
 
 </footer>
+</div>
 <script src="./script/burger.js"></script>
 <script src="./script/template.js"></script>
 <script src="./script.js"></script> 

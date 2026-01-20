@@ -1,11 +1,6 @@
-.header {
-  padding: 1rem;
-  background: #0051c2;
-  color: rgb(255, 155, 32);
-}
-
-
 .burger {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   background: none;
   border: none;
@@ -21,11 +16,43 @@
 .nav a {
   display: block;
   padding: 0.75rem 0;
-  color: rgb(255, 126, 34);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 
 .nav.active {
   display: block;
+}
+
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+/* Video immer Cover, ohne weiße Ränder */
+.splash-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Video füllt immer den Bildschirm aus */
+}
+
+/* Optional: Keine Scrollbars während Splash */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* verhindert Scrollen während Splash */
+}
+
+/* Für Mobilgeräte (ab 320px Breite) */
+@media screen and (max-width: 480px) {
+    .splash-video {
+        width: 100%;
+        height: 100%;
+    }
 }

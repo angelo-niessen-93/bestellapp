@@ -216,3 +216,21 @@ function renderDishesHTML(dish, index) {
         <p class="spicy-label">Scharf: ${spicyIcons}</p>
     </div>`;
 }
+
+window.addEventListener("load", () => {
+    const splash = document.getElementById("splash");
+    const mainContent = document.getElementById("main-content");
+
+    
+    setTimeout(() => {
+        splash.style.transition = "opacity 0.5s";
+        splash.style.opacity = 0;
+
+        setTimeout(() => {
+            splash.style.display = "none";
+            mainContent.style.display = "block";
+            document.body.style.overflow = "auto"; 
+            renderDishes();
+        }, 500);
+    }, 1500);
+});

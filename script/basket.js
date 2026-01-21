@@ -42,7 +42,7 @@ function changeQuantity(dishName, delta) {
   if (basket[dishName]) {
     basket[dishName].quantity += delta;
     if (basket[dishName].quantity <= 0) {
-      delete basket[dishName]; // Gericht entfernen, wenn Menge 0
+      delete basket[dishName];
     }
     renderBasket();
   }
@@ -50,9 +50,13 @@ function changeQuantity(dishName, delta) {
 
 document.getElementById("checkoutButton").addEventListener("click", () => {
   if (Object.keys(basket).length === 0) {
-    alert("Der Warenkorb ist leer.");
     return;
   }
 
   openCheckoutModal();
 });
+
+function toggleMobileBasket() {
+  const basketElement = document.getElementById("basket");
+  basketElement.classList.toggle("open");
+}

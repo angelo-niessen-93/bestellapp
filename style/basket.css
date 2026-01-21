@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-height: 290px;    
+  max-height: 290px;
   overflow-y: auto;
 }
 
@@ -68,10 +68,6 @@ h2 {
   color: white;
 }
 
-p {
-  color: white;
-}
-
 button {
   color: white;
   background-color: #e66e30;
@@ -84,6 +80,10 @@ button:hover {
 
 }
 
+#totalPrice {
+  color: white;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -91,7 +91,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
@@ -113,4 +113,77 @@ button:hover {
 .modal-buttons {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  #basket {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    transform: translateY(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+
+    border-radius: 16px 16px 0 0;
+
+    z-index: 1100;
+    overflow-y: auto;
+    background-color: rgb(76, 76, 76);
+
+    opacity: 0;
+    pointer-events: none;
+
+
+    margin: 0;
+    padding: 0;
+  }
+
+  aside {
+    padding: 0;
+    margin: 0;
+  }
+
+  #basket.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background: #4c4c4c;
+    z-index: 1200;
+  }
+
+  .basket-footer-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 0;
+    border: none;
+    background-color: #4c4c4c;
+    color: white;
+  }
+
+  main {
+    padding-bottom: 50px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+}
+
+@media (min-width: 500px) {
+  .basket-footer-btn {
+    display: none;
+  }
 }

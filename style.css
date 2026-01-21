@@ -4,10 +4,29 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
   background: linear-gradient(180deg, #e66e30, #d84833);
+}
+
+main,
+.hero,
+.main-heading,
+#dishesList,
+.items {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.content-limitation {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  flex-direction: row-reverse;
 }
 
 .main-img {
@@ -16,19 +35,20 @@ header {
   object-fit: cover;
 }
 
-.main-img-container {}
-
-.dishes-list {}
-
 .App-logo {
   width: 150px;
+}
+
+.main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
   display: flex;
   gap: 20px;
   padding: 20px;
-  margin-top: 60px;
 }
 
 .hero {
@@ -128,4 +148,30 @@ main {
   font-size: 20px;
   color: #ffffff;
   background-color: #ea782f;
+}
+
+.impressum {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
+@media (max-width: 500px) {
+  .content-limitation {
+    flex-direction: row;
+  }
+
+  main {
+    display: flex;
+    gap: 0px;
+    padding: 0px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+
 }

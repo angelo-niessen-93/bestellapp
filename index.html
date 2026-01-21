@@ -22,21 +22,23 @@
     </div>
     <div id="main-content" style="display: none">
       <header>
-        <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
-          ☰
-        </button>
+        <div class="content-limitation">
+          <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
+            ☰
+          </button>
 
-        <nav class="nav">
-          <a href="#">Konto</a>
-          <a href="#">Meine Bestellungen</a>
-          <a href="#">Kontakt</a>
-          <a href=".#">Einstellungen</a>
-        </nav>
-        <img
-          class="App-logo"
-          src="./assets/img/Design ohne Titel (1).png"
-          alt="BestellAppLogo"
-        />
+          <nav class="nav">
+            <a href="#">Konto</a>
+            <a href="#">Meine Bestellungen</a>
+            <a href="#">Kontakt</a>
+            <a href=".#">Einstellungen</a>
+          </nav>
+          <img
+            class="App-logo"
+            src="./assets/img/Design ohne Titel (1).png"
+            alt="BestellAppLogo"
+          />
+        </div>
       </header>
       <div class="hero">
         <div class="main-img-container">
@@ -54,7 +56,7 @@
           />
         </div>
       </div>
-      <div>
+      <div class="main-heading">
         <h1>Pizza-Mania</h1>
         <p>The best Food in Town</p>
       </div>
@@ -69,7 +71,17 @@
           </div>
         </aside>
       </main>
-      <footer></footer>
+      <footer>
+        <button
+          id="mobileBasketBtn"
+          class="basket-footer-btn"
+          onclick="toggleMobileBasket()"
+        >
+          🛒
+        </button>
+        <button class="basket-footer-btn">🏠</button>
+        <button class="basket-footer-btn">📞</button>
+      </footer>
     </div>
     <div id="checkoutModal" class="modal">
       <div class="modal-content">
@@ -96,7 +108,6 @@
       </div>
     </div>
     <script src="./script/burger.js"></script>
-    <script src="./script/template.js"></script>
     <script src="./script.js"></script>
     <script src="./script/basket.js"></script>
     <script src="./script/checkout.js"></script>

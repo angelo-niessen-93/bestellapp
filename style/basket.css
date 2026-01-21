@@ -124,18 +124,11 @@ button:hover {
     height: calc(100vh - 50px);
     transform: translateY(100%);
     transition: transform 0.3s ease, opacity 0.3s ease;
-
-
     border-radius: 16px 16px 0 0;
-
-    z-index: 1100;
     overflow-y: auto;
     background-color: rgb(76, 76, 76);
-
     opacity: 0;
     pointer-events: none;
-
-
     margin: 0;
     padding: 0;
   }

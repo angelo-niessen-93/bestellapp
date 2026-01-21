@@ -18,6 +18,10 @@ main,
   box-sizing: border-box;
 }
 
+h1 {
+  margin: 0px;
+}
+
 .content-limitation {
   max-width: 1440px;
   margin: 0 auto;
@@ -43,6 +47,7 @@ main,
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
 main {
@@ -76,6 +81,16 @@ main {
   width: 80px;
   height: 80px;
   object-fit: contain;
+}
+
+.rating span {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.rating span.selected {
+  color: #ea782f;
 }
 
 .dishes-list {
@@ -150,15 +165,36 @@ main {
   background-color: #ea782f;
 }
 
-.impressum {
+.desktop-footer {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #4c4c4c;
+  color: white;
+  text-align: center;
+}
+
+a {
   text-decoration: none;
   color: white;
-  font-size: 10px;
+}
+
+a:hover {
+  color: red;
+}
+
+.mobile-footer {
+  display: none;
 }
 
 @media (max-width: 500px) {
   .content-limitation {
     flex-direction: row;
+  }
+
+  .desktop-footer {
+    display: none;
   }
 
   main {
@@ -172,6 +208,4 @@ main {
     justify-content: center;
     flex-direction: row-reverse;
   }
-
-
 }

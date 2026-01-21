@@ -217,12 +217,12 @@ function renderDishesHTML(dish) {
   for (let i = 0; i < 5; i++) {
     spicyIcons += i < dish.spicyLevel ? "🔥" : "⚪";
   }
-
+ const isInBasket = basket[dish.name] ? "✓ hinzugefügt" : "";
   return `
     <div class="dishes">
       <img src="${dish.image}" alt="${dish.name}">
       <div class="info">
-        <p><strong>${dish.name}</strong></p>
+        <p><strong>${dish.name}</strong>${isInBasket}</p>
         <p>Kategorie: ${dish.category}</p>
         <p>Preis: ${dish.price}€</p>
         ${dish.vegetarian ? `<p class="vegan-label">Vegan</p>` : ""}
@@ -231,6 +231,18 @@ function renderDishesHTML(dish) {
       </div>
     </div>
   `;
+}
+
+function setRating(star) {
+  const value = Number(star.dataset.value);
+  const stars = document.querySelectorAll(".rating span");
+
+  stars.forEach((s) => {
+    s.classList.remove("selected"); 
+    if (Number(s.dataset.value) <= value) {
+      s.classList.add("selected"); 
+    }
+  });
 }
 
 window.addEventListener("load", () => {

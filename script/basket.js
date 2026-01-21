@@ -8,6 +8,7 @@ function addToBasket(dishName) {
     basket[dishName].quantity += 1;
   }
   renderBasket();
+  renderDishes();
 }
 
 function renderBasket() {
@@ -45,6 +46,7 @@ function changeQuantity(dishName, delta) {
       delete basket[dishName];
     }
     renderBasket();
+    renderDishes();
   }
 }
 

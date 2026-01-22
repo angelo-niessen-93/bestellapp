@@ -19,7 +19,12 @@ main,
 }
 
 h1 {
+  font-family: "Story Script", sans-serif;
   margin: 0px;
+  color: #f3c23f;
+  font-size: 55px;
+  -webkit-text-stroke: 0.1px black;
+  text-shadow: 5px 5px 5px #0000008c;
 }
 
 .content-limitation {
@@ -85,6 +90,7 @@ main {
   font-size: 30px;
   cursor: pointer;
   color: #ccc;
+  text-shadow: 5px 5px 5px #0000004f;
 }
 
 .rating span.selected {

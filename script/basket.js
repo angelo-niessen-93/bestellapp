@@ -15,7 +15,7 @@ function renderBasket() {
   const basketItems = document.getElementById("basketItems");
   basketItems.innerHTML = "";
 
-  let totalPrice = 0;
+  let totalPrice = 0 + 3;
 
   for (let key in basket) {
     const item = basket[key];
@@ -36,7 +36,8 @@ function renderBasket() {
   }
 
   document.getElementById("totalPrice").innerText =
-    `Gesamt: ${totalPrice.toFixed(2)}€`;
+  `Gesamt: ${totalPrice.toFixed(2)} € (inkl. 3.00€ Lieferung)`;
+    
 }
 
 function changeQuantity(dishName, delta) {

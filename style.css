@@ -170,6 +170,8 @@ main {
   color: #ffffff;
   background-color: #ea782f;
   height: 60px;
+  margin-top: 0;
+  border-radius: 8px;
 }
 
 .desktop-footer {

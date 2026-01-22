@@ -197,7 +197,12 @@ function renderDishes() {
   const dishesList = document.getElementById("dishesList");
   dishesList.innerHTML = "";
 
-  const categories = ["🍛Warme Speisen", "🥗Salate", "🍰Desserts", "🍤Vorspeisen"];
+  const categories = [
+    "🍛Warme Speisen",
+    "🥗Salate",
+    "🍰Desserts",
+    "🍤Vorspeisen",
+  ];
 
   categories.forEach((category) => {
     const dishesInCategory = dishes.filter(
@@ -217,7 +222,7 @@ function renderDishesHTML(dish) {
   for (let i = 0; i < 5; i++) {
     spicyIcons += i < dish.spicyLevel ? "🔥" : "⚪";
   }
- const isInBasket = basket[dish.name] ? " hinzugefügt" : "";
+  const isInBasket = basket[dish.name] ? " hinzugefügt" : "";
   return `
     <div class="dishes">
       <img src="${dish.image}" alt="${dish.name}">
@@ -238,9 +243,9 @@ function setRating(star) {
   const stars = document.querySelectorAll(".rating span");
 
   stars.forEach((s) => {
-    s.classList.remove("selected"); 
+    s.classList.remove("selected");
     if (Number(s.dataset.value) <= value) {
-      s.classList.add("selected"); 
+      s.classList.add("selected");
     }
   });
 }

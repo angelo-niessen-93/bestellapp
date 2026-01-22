@@ -15,29 +15,37 @@ function renderBasket() {
   const basketItems = document.getElementById("basketItems");
   basketItems.innerHTML = "";
 
-  let totalPrice = 0 + 3;
+  let totalPrice = 0;
+  const delivery = 3.0;
+  let hasItems = false;
 
   for (let key in basket) {
     const item = basket[key];
-    const itemTotal = (item.dish.price * item.quantity).toFixed(2);
-    totalPrice += parseFloat(itemTotal);
+    hasItems = true;
+
+    const itemTotal = item.dish.price * item.quantity;
+    totalPrice += itemTotal;
 
     basketItems.innerHTML += `
       <div class="basket-item">
         <span>${item.dish.name}</span>
         <div class="quantity-controls">
-          <button class="quantity-button" onclick="changeQuantity('${key}', -1)">-</button>
+          <button onclick="changeQuantity('${key}', -1)">-</button>
           <span>${item.quantity}</span>
-          <button class="quantity-button" onclick="changeQuantity('${key}', 1)">+</button>
+          <button onclick="changeQuantity('${key}', 1)">+</button>
         </div>
-        <span>${itemTotal}€</span>
+        <span>${itemTotal.toFixed(2)} €</span>
       </div>
     `;
   }
 
-  document.getElementById("totalPrice").innerText =
-  `Gesamt: ${totalPrice.toFixed(2)} € (inkl. 3.00€ Lieferung)`;
-    
+  if (hasItems) {
+    totalPrice += delivery;
+    document.getElementById("totalPrice").innerText =
+      `Gesamt: ${totalPrice.toFixed(2)} € (inkl. ${delivery.toFixed(2)} € Lieferung)`;
+  } else {
+    document.getElementById("totalPrice").innerText = `Gesamt: 0,00 €`;
+  }
 }
 
 function changeQuantity(dishName, delta) {

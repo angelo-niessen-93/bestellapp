@@ -1,7 +1,7 @@
 let dishes = [
   {
     name: "Spaghetti Bolognese",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/spaghetti-1604836_640.jpg",
     price: 12.99,
     vegetarian: false,
@@ -9,7 +9,7 @@ let dishes = [
   },
   {
     name: "Penne Arrabbiata",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/spaghetti-1604836_640.jpg",
     price: 11.55,
     vegetarian: true,
@@ -17,7 +17,7 @@ let dishes = [
   },
   {
     name: "Hähnchen-Curry",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/curry-7249247_640.jpg",
     price: 13.55,
     vegetarian: false,
@@ -25,7 +25,7 @@ let dishes = [
   },
   {
     name: "Rindersteak mit Ofenkartoffeln",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/steak-4432946_640.jpg",
     price: 19.99,
     vegetarian: false,
@@ -33,7 +33,7 @@ let dishes = [
   },
   {
     name: "Gemüsepfanne",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/vegetable-pan-8027678_640.jpg",
     price: 11.25,
     vegetarian: true,
@@ -41,7 +41,7 @@ let dishes = [
   },
   {
     name: "Lasagne al Forno",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/lasagna-1900529_640.jpg",
     price: 13.99,
     vegetarian: false,
@@ -49,7 +49,7 @@ let dishes = [
   },
   {
     name: "Risotto mit Pilzen",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/rice-4457143_640.jpg",
     price: 12.55,
     vegetarian: true,
@@ -57,7 +57,7 @@ let dishes = [
   },
   {
     name: "Schnitzel Wiener Art",
-    category: "Warme Speisen",
+    category: "🍛Warme Speisen",
     image: "./assets/img/schnitzel-961131_640.jpg",
     price: 15.99,
     vegetarian: false,
@@ -65,7 +65,7 @@ let dishes = [
   },
   {
     name: "Tomatensuppe",
-    category: "Vorspeisen",
+    category: "🍤Vorspeisen",
     image: "./assets/img/tomato-soup-2288056_640.jpg",
     price: 5.99,
     vegetarian: true,
@@ -73,7 +73,7 @@ let dishes = [
   },
   {
     name: "Kürbissuppe",
-    category: "Vorspeisen",
+    category: "🍤Vorspeisen",
     image: "./assets/img/soup-6946614_640.jpg",
     price: 6.55,
     vegetarian: true,
@@ -81,7 +81,7 @@ let dishes = [
   },
   {
     name: "Bruschetta",
-    category: "Vorspeisen",
+    category: "🍤Vorspeisen",
     image: "./assets/img/gourmet-5619887_640.jpg",
     price: 6.55,
     vegetarian: true,
@@ -89,7 +89,7 @@ let dishes = [
   },
   {
     name: "Garnelen in Knoblauchöl",
-    category: "Vorspeisen",
+    category: "🍤Vorspeisen",
     image: "./assets/img/prawns-in-tomato-sauce-4866597_640.jpg",
     price: 8.99,
     vegetarian: false,
@@ -97,7 +97,7 @@ let dishes = [
   },
   {
     name: "Caprese",
-    category: "Vorspeisen",
+    category: "🍤Vorspeisen",
     image: "./assets/img/mozzarella-salad-5377848_640.jpg",
     price: 7.25,
     vegetarian: true,
@@ -105,7 +105,7 @@ let dishes = [
   },
   {
     name: "Antipasti Misto",
-    category: "Vorspeisen",
+    category: "🍤Vorspeisen",
     image: "./assets/img/mozzarella-salad-5377848_640.jpg",
     price: 9.55,
     vegetarian: true,
@@ -113,7 +113,7 @@ let dishes = [
   },
   {
     name: "Caesar Salad",
-    category: "Salate",
+    category: "🥗Salate",
     image: "./assets/img/italian-salad-2156723_640.jpg",
     price: 9.99,
     vegetarian: false,
@@ -121,7 +121,7 @@ let dishes = [
   },
   {
     name: "Griechischer Salat",
-    category: "Salate",
+    category: "🥗Salate",
     image: "./assets/img/italian-salad-2156723_640.jpg",
     price: 8.99,
     vegetarian: true,
@@ -129,7 +129,7 @@ let dishes = [
   },
   {
     name: "Rucola-Parmesan-Salat",
-    category: "Salate",
+    category: "🥗Salate",
     image: "./assets/img/carpaccio-777850_640.jpg",
     price: 9.55,
     vegetarian: true,
@@ -137,7 +137,7 @@ let dishes = [
   },
   {
     name: "Salat mit gebratenen Hähnchenstreifen",
-    category: "Salate",
+    category: "🥗Salate",
     image: "./assets/img/salad-791891_640.jpg",
     price: 11.99,
     vegetarian: false,
@@ -145,7 +145,7 @@ let dishes = [
   },
   {
     name: "Linsensalat",
-    category: "Salate",
+    category: "🥗Salate",
     image: "./assets/img/salad-791891_640.jpg",
     price: 9.25,
     vegetarian: true,
@@ -153,7 +153,7 @@ let dishes = [
   },
   {
     name: "Schokoladenkuchen",
-    category: "Desserts",
+    category: "🍰Desserts",
     image: "./assets/img/cakes-6522512_640.jpg",
     price: 4.99,
     vegetarian: true,
@@ -161,7 +161,7 @@ let dishes = [
   },
   {
     name: "Tiramisu",
-    category: "Desserts",
+    category: "🍰Desserts",
     image: "./assets/img/tiramisu-6172170_640.jpg",
     price: 5.99,
     vegetarian: true,
@@ -169,7 +169,7 @@ let dishes = [
   },
   {
     name: "Vanilleeis mit heißen Himbeeren",
-    category: "Desserts",
+    category: "🍰Desserts",
     image: "./assets/img/meal-2114781_640.jpg",
     price: 5.55,
     vegetarian: true,
@@ -177,7 +177,7 @@ let dishes = [
   },
   {
     name: "Panna Cotta",
-    category: "Desserts",
+    category: "🍰Desserts",
     image: "./assets/img/dessert-1373820_640.jpg",
     price: 5.25,
     vegetarian: true,
@@ -185,7 +185,7 @@ let dishes = [
   },
   {
     name: "Apfelstrudel mit Vanillesauce",
-    category: "Desserts",
+    category: "🍰Desserts",
     image: "./assets/img/swirl-1532893_640.jpg",
     price: 5.85,
     vegetarian: true,
@@ -197,7 +197,7 @@ function renderDishes() {
   const dishesList = document.getElementById("dishesList");
   dishesList.innerHTML = "";
 
-  const categories = ["Warme Speisen", "Salate", "Desserts", "Vorspeisen"];
+  const categories = ["🍛Warme Speisen", "🥗Salate", "🍰Desserts", "🍤Vorspeisen"];
 
   categories.forEach((category) => {
     const dishesInCategory = dishes.filter(
@@ -217,17 +217,17 @@ function renderDishesHTML(dish) {
   for (let i = 0; i < 5; i++) {
     spicyIcons += i < dish.spicyLevel ? "🔥" : "⚪";
   }
- const isInBasket = basket[dish.name] ? "✓ hinzugefügt" : "";
+ const isInBasket = basket[dish.name] ? " hinzugefügt" : "";
   return `
     <div class="dishes">
       <img src="${dish.image}" alt="${dish.name}">
       <div class="info">
-        <p><strong>${dish.name}</strong>${isInBasket}</p>
+        <p><strong>${dish.name}</strong></p>
         <p>Kategorie: ${dish.category}</p>
         <p>Preis: ${dish.price}€</p>
         ${dish.vegetarian ? `<p class="vegan-label">Vegan</p>` : ""}
         <p class="spicy-label">Scharf: ${spicyIcons}</p>
-        <button class="add-button" onclick="addToBasket('${dish.name}')">+</button>
+        <button class="add-button" onclick="addToBasket('${dish.name}')">+ ${isInBasket}</button>
       </div>
     </div>
   `;

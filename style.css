@@ -52,8 +52,6 @@ h1 {
 
 main {
   display: flex;
-  gap: 20px;
-  padding: 20px;
 }
 
 .hero {
@@ -158,11 +156,14 @@ main {
 }
 
 .category-title {
+  display: flex;
+  align-items: center;
   width: 100%;
   text-align: left;
   font-size: 20px;
   color: #ffffff;
   background-color: #ea782f;
+  height: 60px;
 }
 
 .desktop-footer {

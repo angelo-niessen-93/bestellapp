@@ -197,6 +197,13 @@ function renderDishes() {
   const dishesList = document.getElementById("dishesList");
   dishesList.innerHTML = "";
 
+//const categories = [
+ // { id: "warme-speisen", "🍛Warme Speisen" },
+ //{ id: "salate", "🥗Salate" },
+ //{ id: "desserts", "🍰Desserts" },
+ //{ id: "vorspeisen", "🍤Vorspeisen" },
+//];
+
   const categories = [
     "🍛Warme Speisen",
     "🥗Salate",
@@ -209,8 +216,8 @@ function renderDishes() {
       (dish) => dish.category === category,
     );
     if (dishesInCategory.length > 0) {
-      dishesList.innerHTML += `<h2 class="category-title">${category}</h2>`;
-      dishesInCategory.forEach((dish) => {
+        dishesList.innerHTML += `<h2 class="category-title">${category}</h2>`;
+        dishesInCategory.forEach((dish) => {
         dishesList.innerHTML += renderDishesHTML(dish);
       });
     }

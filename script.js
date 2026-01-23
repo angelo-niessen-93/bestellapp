@@ -1,7 +1,7 @@
 let dishes = [
   {
     name: "Spaghetti Bolognese",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/spaghetti-1604836_640.jpg",
     price: 12.99,
     vegetarian: false,
@@ -9,7 +9,7 @@ let dishes = [
   },
   {
     name: "Penne Arrabbiata",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/spaghetti-1604836_640.jpg",
     price: 11.55,
     vegetarian: true,
@@ -17,7 +17,7 @@ let dishes = [
   },
   {
     name: "Hähnchen-Curry",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/curry-7249247_640.jpg",
     price: 13.55,
     vegetarian: false,
@@ -25,7 +25,7 @@ let dishes = [
   },
   {
     name: "Rindersteak mit Ofenkartoffeln",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/steak-4432946_640.jpg",
     price: 19.99,
     vegetarian: false,
@@ -33,7 +33,7 @@ let dishes = [
   },
   {
     name: "Gemüsepfanne",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/vegetable-pan-8027678_640.jpg",
     price: 11.25,
     vegetarian: true,
@@ -41,7 +41,7 @@ let dishes = [
   },
   {
     name: "Lasagne al Forno",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/lasagna-1900529_640.jpg",
     price: 13.99,
     vegetarian: false,
@@ -49,7 +49,7 @@ let dishes = [
   },
   {
     name: "Risotto mit Pilzen",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/rice-4457143_640.jpg",
     price: 12.55,
     vegetarian: true,
@@ -57,7 +57,7 @@ let dishes = [
   },
   {
     name: "Schnitzel Wiener Art",
-    category: "🍛Warme Speisen",
+    category: "warme-speisen",
     image: "./assets/img/schnitzel-961131_640.jpg",
     price: 15.99,
     vegetarian: false,
@@ -65,7 +65,7 @@ let dishes = [
   },
   {
     name: "Tomatensuppe",
-    category: "🍤Vorspeisen",
+    category: "vorspeisen",
     image: "./assets/img/tomato-soup-2288056_640.jpg",
     price: 5.99,
     vegetarian: true,
@@ -73,7 +73,7 @@ let dishes = [
   },
   {
     name: "Kürbissuppe",
-    category: "🍤Vorspeisen",
+    category: "vorspeisen",
     image: "./assets/img/soup-6946614_640.jpg",
     price: 6.55,
     vegetarian: true,
@@ -81,7 +81,7 @@ let dishes = [
   },
   {
     name: "Bruschetta",
-    category: "🍤Vorspeisen",
+    category: "vorspeisen",
     image: "./assets/img/gourmet-5619887_640.jpg",
     price: 6.55,
     vegetarian: true,
@@ -89,7 +89,7 @@ let dishes = [
   },
   {
     name: "Garnelen in Knoblauchöl",
-    category: "🍤Vorspeisen",
+    category: "vorspeisen",
     image: "./assets/img/prawns-in-tomato-sauce-4866597_640.jpg",
     price: 8.99,
     vegetarian: false,
@@ -97,7 +97,7 @@ let dishes = [
   },
   {
     name: "Caprese",
-    category: "🍤Vorspeisen",
+    category: "vorspeisen",
     image: "./assets/img/mozzarella-salad-5377848_640.jpg",
     price: 7.25,
     vegetarian: true,
@@ -105,7 +105,7 @@ let dishes = [
   },
   {
     name: "Antipasti Misto",
-    category: "🍤Vorspeisen",
+    category: "vorspeisen",
     image: "./assets/img/mozzarella-salad-5377848_640.jpg",
     price: 9.55,
     vegetarian: true,
@@ -113,7 +113,7 @@ let dishes = [
   },
   {
     name: "Caesar Salad",
-    category: "🥗Salate",
+    category: "salate",
     image: "./assets/img/italian-salad-2156723_640.jpg",
     price: 9.99,
     vegetarian: false,
@@ -121,7 +121,7 @@ let dishes = [
   },
   {
     name: "Griechischer Salat",
-    category: "🥗Salate",
+    category: "salate",
     image: "./assets/img/italian-salad-2156723_640.jpg",
     price: 8.99,
     vegetarian: true,
@@ -129,7 +129,7 @@ let dishes = [
   },
   {
     name: "Rucola-Parmesan-Salat",
-    category: "🥗Salate",
+    category: "salate",
     image: "./assets/img/carpaccio-777850_640.jpg",
     price: 9.55,
     vegetarian: true,
@@ -137,7 +137,7 @@ let dishes = [
   },
   {
     name: "Salat mit gebratenen Hähnchenstreifen",
-    category: "🥗Salate",
+    category: "salate",
     image: "./assets/img/salad-791891_640.jpg",
     price: 11.99,
     vegetarian: false,
@@ -145,7 +145,7 @@ let dishes = [
   },
   {
     name: "Linsensalat",
-    category: "🥗Salate",
+    category: "salate",
     image: "./assets/img/salad-791891_640.jpg",
     price: 9.25,
     vegetarian: true,
@@ -153,7 +153,7 @@ let dishes = [
   },
   {
     name: "Schokoladenkuchen",
-    category: "🍰Desserts",
+    category: "desserts",
     image: "./assets/img/cakes-6522512_640.jpg",
     price: 4.99,
     vegetarian: true,
@@ -161,7 +161,7 @@ let dishes = [
   },
   {
     name: "Tiramisu",
-    category: "🍰Desserts",
+    category: "desserts",
     image: "./assets/img/tiramisu-6172170_640.jpg",
     price: 5.99,
     vegetarian: true,
@@ -169,7 +169,7 @@ let dishes = [
   },
   {
     name: "Vanilleeis mit heißen Himbeeren",
-    category: "🍰Desserts",
+    category: "desserts",
     image: "./assets/img/meal-2114781_640.jpg",
     price: 5.55,
     vegetarian: true,
@@ -177,7 +177,7 @@ let dishes = [
   },
   {
     name: "Panna Cotta",
-    category: "🍰Desserts",
+    category: "desserts",
     image: "./assets/img/dessert-1373820_640.jpg",
     price: 5.25,
     vegetarian: true,
@@ -185,7 +185,7 @@ let dishes = [
   },
   {
     name: "Apfelstrudel mit Vanillesauce",
-    category: "🍰Desserts",
+    category: "desserts",
     image: "./assets/img/swirl-1532893_640.jpg",
     price: 5.85,
     vegetarian: true,
@@ -197,31 +197,28 @@ function renderDishes() {
   const dishesList = document.getElementById("dishesList");
   dishesList.innerHTML = "";
 
-//const categories = [
- // { id: "warme-speisen", "🍛Warme Speisen" },
- //{ id: "salate", "🥗Salate" },
- //{ id: "desserts", "🍰Desserts" },
- //{ id: "vorspeisen", "🍤Vorspeisen" },
-//];
-
-  const categories = [
-    "🍛Warme Speisen",
-    "🥗Salate",
-    "🍰Desserts",
-    "🍤Vorspeisen",
-  ];
+const categories = [
+  { id: "warme-speisen", name: "🍛Warme Speisen" },
+ { id: "salate", name: "🥗Salate" },
+ { id: "desserts", name: "🍰Desserts" },
+ { id: "vorspeisen", name: "🍤Vorspeisen" },
+];
 
   categories.forEach((category) => {
-    const dishesInCategory = dishes.filter(
-      (dish) => dish.category === category,
-    );
-    if (dishesInCategory.length > 0) {
-        dishesList.innerHTML += `<h2 class="category-title">${category}</h2>`;
-        dishesInCategory.forEach((dish) => {
-        dishesList.innerHTML += renderDishesHTML(dish);
-      });
-    }
-  });
+  const dishesInCategory = dishes.filter(
+    (dish) => dish.category === category.id
+  );
+
+  if (dishesInCategory.length > 0) {
+    dishesList.innerHTML += `
+      <h2 id="${category.id}" class="category-title">${category.name}</h2>
+    `;
+
+    dishesInCategory.forEach((dish) => {
+      dishesList.innerHTML += renderDishesHTML(dish);
+    });
+  }
+});
 }
 
 function renderDishesHTML(dish) {

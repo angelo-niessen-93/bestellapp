@@ -33,7 +33,6 @@ function renderBasket() {
       : "Gesamt: 0,00 €";
 }
 
-
 function removeFromBasket(key) {
   delete basket[key];
   renderBasket();

@@ -6,7 +6,6 @@ function closeCheckoutModal() {
   document.getElementById("checkoutModal").style.display = "none";
 }
 
-
 function openOrderSuccessModal() {
   document.getElementById("orderSuccessModal").style.display = "flex";
 }

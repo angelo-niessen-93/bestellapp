@@ -7,6 +7,10 @@ header {
   background: linear-gradient(180deg, #e66e30, #d84833);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main,
 .hero,
 .main-heading,
@@ -227,6 +231,7 @@ a:hover {
 label {
   color: white;
 }
+
 @media (max-width: 500px) {
   .content-limitation {
     flex-direction: row;

@@ -197,49 +197,28 @@ function renderDishes() {
   const dishesList = document.getElementById("dishesList");
   dishesList.innerHTML = "";
 
-const categories = [
- { id: "warme-speisen", name: "🍛Warme Speisen" },
- { id: "salate", name: "🥗Salate" },
- { id: "desserts", name: "🍰Desserts" },
- { id: "vorspeisen", name: "🍤Vorspeisen" },
-];
+  const categories = [
+    { id: "warme-speisen", name: "🍛Warme Speisen" },
+    { id: "salate", name: "🥗Salate" },
+    { id: "desserts", name: "🍰Desserts" },
+    { id: "vorspeisen", name: "🍤Vorspeisen" },
+  ];
 
   categories.forEach((category) => {
-  const dishesInCategory = dishes.filter(
-    (dish) => dish.category === category.id
-  );
+    const dishesInCategory = dishes.filter(
+      (dish) => dish.category === category.id,
+    );
 
-  if (dishesInCategory.length > 0) {
-    dishesList.innerHTML += `
+    if (dishesInCategory.length > 0) {
+      dishesList.innerHTML += `
       <h2 id="${category.id}" class="category-title">${category.name}</h2>
     `;
 
-    dishesInCategory.forEach((dish) => {
-      dishesList.innerHTML += renderDishesHTML(dish);
-    });
-  }
-});
-}
-
-function renderDishesHTML(dish) {
-  let spicyIcons = "";
-  for (let i = 0; i < 5; i++) {
-    spicyIcons += i < dish.spicyLevel ? "🔥" : "⚪";
-  }
-  const isInBasket = basket[dish.name] ? " hinzugefügt" : "";
-  return `
-    <div class="dishes">
-      <img src="${dish.image}" alt="${dish.name}">
-      <div class="info">
-        <p><strong>${dish.name}</strong></p>
-        <p>Kategorie: ${dish.category}</p>
-        <p>Preis: ${dish.price}€</p>
-        ${dish.vegetarian ? `<p class="vegan-label">Vegan</p>` : ""}
-        <p class="spicy-label">Scharf: ${spicyIcons}</p>
-        <button class="add-button" onclick="addToBasket('${dish.name}')">+ ${isInBasket}</button>
-      </div>
-    </div>
-  `;
+      dishesInCategory.forEach((dish) => {
+        dishesList.innerHTML += renderDishesHTML(dish);
+      });
+    }
+  });
 }
 
 function setRating(star) {

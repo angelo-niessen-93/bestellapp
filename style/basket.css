@@ -44,7 +44,7 @@
 .quantity-controls {
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-evenly;
 }
 
 .quantity-button {

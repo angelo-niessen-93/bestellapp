@@ -198,7 +198,7 @@ function renderDishes() {
   dishesList.innerHTML = "";
 
 const categories = [
-  { id: "warme-speisen", name: "🍛Warme Speisen" },
+ { id: "warme-speisen", name: "🍛Warme Speisen" },
  { id: "salate", name: "🥗Salate" },
  { id: "desserts", name: "🍰Desserts" },
  { id: "vorspeisen", name: "🍤Vorspeisen" },

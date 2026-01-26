@@ -6,6 +6,15 @@ function closeCheckoutModal() {
   document.getElementById("checkoutModal").style.display = "none";
 }
 
+
+function openOrderSuccessModal() {
+  document.getElementById("orderSuccessModal").style.display = "flex";
+}
+
+function closeOrderSuccessModal() {
+  document.getElementById("orderSuccessModal").style.display = "none";
+}
+
 function confirmOrder() {
   const name = document.getElementById("customerName").value;
   const address = document.getElementById("customerAddress").value;
@@ -17,5 +26,7 @@ function confirmOrder() {
 
   basket = {};
   renderBasket();
+  renderDishes();
   closeCheckoutModal();
+  openOrderSuccessModal();
 }

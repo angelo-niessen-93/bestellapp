@@ -91,6 +91,10 @@ main {
   object-fit: cover;
 }
 
+.delivery-time {
+  color: white;
+}
+
 .logo-wrapper {
   position: absolute;
   left: 50%;

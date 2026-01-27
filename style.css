@@ -123,6 +123,13 @@ main {
   text-shadow: 5px 5px 5px #0000004f;
 }
 
+span.rating-text {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 10px;
+}
+
 .rating span.selected {
   color: #ea782f;
 }
@@ -142,6 +149,9 @@ main {
   background-color: burlywood;
 }
 
+.time {
+  color: rgba(254, 0, 0, 0.835);
+}
 
 .dishes img {
   width: 100px;

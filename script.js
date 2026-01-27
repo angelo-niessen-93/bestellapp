@@ -231,6 +231,11 @@ function setRating(star) {
       s.classList.add("selected");
     }
   });
+  const ratingText = document.querySelector(".rating-text");
+  if (ratingText) {
+    ratingText.textContent =`${value}/5☆`;
+  }
+
 }
 
 window.addEventListener("load", () => {
